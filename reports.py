@@ -40,7 +40,7 @@ class PdfReport:
         # Insert name and due amount of second flatmate
         pdf.cell(w=100, h=25, txt=flatmate2.name, border=0)
         pdf.cell(w=0, h=25, txt=flatmate2_pay, border=0, ln=1)
-        
+
         # Change directory to files, generate and open the PDF
         os.chdir("files")
         pdf.output(self.filename)
